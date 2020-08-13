@@ -1,0 +1,200 @@
+h1, h2, h3, h4, h5, h6, figure {
+  color: #303133;
+  font-family: "Nunito", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  line-height: 1.3; }
+
+.video-hero {
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0; 
+    height: "700px";
+    background-size: "cover";
+    background-position: "center";
+    background-attachment: "fixed";}
+    @media screen and (max-width: 768px) {
+      .video-hero {
+        height: inherit;
+        padding: 3em 0; } }
+    .video-hero .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.95;
+      background: #499bea;
+      background: -moz-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, #499bea), color-stop(100%, #798eea));
+      background: -webkit-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+      background: -o-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+      background: -ms-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+      background: -webkit-linear-gradient(315deg, #499bea 0%, #798eea 100%);
+      background: -o-linear-gradient(315deg, #499bea 0%, #798eea 100%);
+      background: linear-gradient(135deg, #499bea 0%, #798eea 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#798eea', GradientType=1 );
+      z-index: 1; }
+    .video-hero .display-t {
+      display: table;
+      height: 700px;
+      width: 100%;
+      position: relative;
+      z-index: 2; }
+      @media screen and (max-width: 768px) {
+        .video-hero .display-t {
+          height: 600px; } }
+      .video-hero .display-t.display-t2 {
+        height: 500px; }
+    .video-hero .display-tc {
+      display: table-cell;
+      vertical-align: middle; }
+      .video-hero .display-tc .holder {
+        color: #fff;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 7px; }
+        .video-hero .display-tc .holder span {
+          position: relative; }
+      .video-hero .display-tc h2 {
+        color: #fff;
+        font-size: 60px;
+        margin-bottom: 20px;
+        font-weight: 300; }
+        @media screen and (max-width: 768px) {
+          .video-hero .display-tc h2 {
+            font-size: 34px; } }
+      .video-hero .display-tc p {
+        font-family: "Nunito", Arial, sans-serif;
+        color: #fff;
+        font-weight: 200;
+        font-size: 30px; }
+      .video-hero .display-tc p.breadcrumbs {
+        font-size: 14px; }
+        .video-hero .display-tc p.breadcrumbs span {
+          padding-right: 10px;
+          color: rgba(255, 255, 255, 0.5); }
+          .video-hero .display-tc p.breadcrumbs span a {
+            color: rgba(255, 255, 255, 0.9); }
+      .video-hero .display-tc .btn-custom {
+        font-size: 16px; }
+
+.btn {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 8px 20px; }
+  .btn.btn-md {
+    padding: 8px 20px !important; }
+  .btn.btn-lg {
+    padding: 18px 36px !important; }
+  .btn:hover, .btn:active, .btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important; }
+
+.btn-primary {
+  background: #4aca85;
+  color: #fff;
+  border: 1px solid #4aca85; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background: #5ed092 !important;
+    border-color: #5ed092 !important; }
+  .btn-primary.btn-outline {
+    background: transparent;
+    color: #4aca85;
+    border: 1px solid #4aca85; }
+    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+      background: #4aca85;
+      color: #fff; }
+
+#colorlib-offcanvas ul li.btn-cta {
+    margin-top: 5px; }
+    #colorlib-offcanvas ul li.btn-cta a {
+        border-bottom: 1px solid #4aca85;
+        padding-bottom: 5px; }
+
+
+
+/* ---------------Bootstrap Begins Here---------------*/
+
+
+
+.text-center {
+    text-align: center;
+    }
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .container:before, .container:after {
+    content: " ";
+    display: table;
+    }
+    .container:after {
+    clear: both;
+    }
+    @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    }
+    @media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    }
+    @media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    }
+    
+    .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .container-fluid:before, .container-fluid:after {
+    content: " ";
+    display: table;
+    }
+    .container-fluid:after {
+    clear: both;
+    }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+@media (min-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-md-12 {
+        width: 100%;
+      }
+}
+
+
+
+/* ---------------Bootstrap Ends Here---------------*/
+  

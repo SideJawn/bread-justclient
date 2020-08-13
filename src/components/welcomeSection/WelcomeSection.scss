@@ -1,0 +1,77 @@
+.video-hero{
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	z-index: 0;
+	@media screen and (max-width: $screen-sm) {
+		heifght: inherit;
+		padding: 3em 0;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.95;
+		@include gradient-background;
+		z-index: 1;
+	}
+	.display-t{
+		display: table;
+		height: 700px;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		@media screen and (max-width :$screen-sm) {
+			height: 600px;
+		}
+		&.display-t2{
+			height: 500px;
+		}
+	}
+	.display-tc{
+		display: table-cell;
+		vertical-align: middle;
+		.holder{
+			color: $brand-white;
+			font-family: $font-primary;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 7px;
+			span{
+				position: relative;
+			}
+			
+		}
+		h2{
+			color: $brand-white;
+			font-size: 60px;
+			margin-bottom: 20px;
+			font-weight: 300;
+			@media screen and(max-width: $screen-sm){
+				font-size: 34px;
+			}
+		}
+		p{
+			font-family: $font-secondary;
+			color: $brand-white;
+			font-weight: 200;
+			font-size: 30px;
+		}
+		p.breadcrumbs{
+			font-size: 14px;
+			span{
+				padding-right: 10px;
+				color: rgba(255,255,255,.5);
+				a{
+					color: rgba(255,255,255,.9);
+				}
+			}
+		}
+		.btn-custom{
+			font-size: 16px;
+		}
+	}
+}
+ 
