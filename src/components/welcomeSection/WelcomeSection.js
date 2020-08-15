@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './WelcomeSection.css'
 import background from '../../images/marvin-meyer-IndexWorkSpace-unsplash.jpg'
 
-export default class WelcomeSection extends React.Component {
+export default class WelcomeSection extends Component {
     render() {
         return (
             <section id="home" class="video-hero" style={{backgroundImage: `url(${background})`}} data-section="home">

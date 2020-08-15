@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import './LandingPage.scss'
@@ -19,7 +19,7 @@ const Body = () => {
     )
 }
 
-export default class LandingPage extends React.Component {
+export default class LandingPage extends Component {
     render() {
         return (
             <div id="page">
