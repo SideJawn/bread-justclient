@@ -1,15 +1,8 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
+import NavBar from '../navBar/NavBar'
 import './LandingPage.scss'
-
-const NavBar = () => {
-    return (
-        <div>
-            Nav goes here.
-        </div>
-    )
-}
 
 const Body = () => {
     return (
