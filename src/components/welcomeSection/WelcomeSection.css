@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, figure {
+h2{
   color: #303133;
   font-family: "Nunito", Arial, sans-serif;
   font-weight: 400;
@@ -18,24 +18,6 @@ h1, h2, h3, h4, h5, h6, figure {
       .video-hero {
         height: inherit;
         padding: 3em 0; } }
-    .video-hero .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.95;
-      background: #499bea;
-      background: -moz-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, #499bea), color-stop(100%, #798eea));
-      background: -webkit-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
-      background: -o-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
-      background: -ms-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
-      background: -webkit-linear-gradient(315deg, #499bea 0%, #798eea 100%);
-      background: -o-linear-gradient(315deg, #499bea 0%, #798eea 100%);
-      background: linear-gradient(135deg, #499bea 0%, #798eea 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#798eea', GradientType=1 );
-      z-index: 1; }
     .video-hero .display-t {
       display: table;
       height: 700px;
