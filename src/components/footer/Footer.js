@@ -7,7 +7,7 @@ export default class footer extends Component {
 		<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
+					<div class="col-md-3 colorlib-widget" id="footer-nav">
 						<h4>Navigation</h4>
 						<p>
 							<ul class="colorlib-footer-links">
@@ -20,7 +20,7 @@ export default class footer extends Component {
 							</ul>
 						</p>
 					</div>
-					<div class="col-md-3 colorlib-widget">
+					<div class="col-md-3 colorlib-widget" id="footer-contact">
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
 							<li>123 Girard Street, <br></br> Suite 1 Pennsylvania PA 19125</li>
@@ -40,9 +40,10 @@ export default class footer extends Component {
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
-								Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.<br></br>
+								Template is licensed under CC BY 3.0.
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib. </a>
+								Link back to Colorlib can't be removed. 
+                                <br></br>
 								Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a>
 							</p>
 						</div>
