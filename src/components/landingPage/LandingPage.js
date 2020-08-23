@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import VideoSection from '../videoSection/VideoSection'
+import ProjectFeed from '../projectFeed/ProjectFeed'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -17,6 +18,7 @@ const Body = () => {
         <div>
             <WelcomeSection/>
             <VideoSection/>
+            <ProjectFeed/>
         </div>
     )
 }
