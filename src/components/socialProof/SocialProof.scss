@@ -1,0 +1,151 @@
+// Colors
+$brand-white: #fff;
+
+// Fonts
+$font-primary: 'Poppins',Arial, sans-serif;
+$font-secondary: 'Nunito', Arial, sans-serif;
+
+// Mixins
+@mixin gradient-background(){
+background: #499bea;
+background: -moz-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, #499bea), color-stop(100%, #798eea));
+background: -webkit-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+background: -o-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+background: -ms-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+background: linear-gradient(135deg, #499bea 0%, #798eea 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#798eea', GradientType=1 );
+}
+
+// Alignment
+.text-center         { text-align: center;}
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+.reinforcement {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 275;
+    font-family: $font-secondary;
+    text-align: center;
+}
+
+.counter-entry{
+	padding: 0;
+	position: relative;
+	@media screen and(max-width: $screen-sm){
+		margin-bottom: 20px;
+	}
+}
+
+#colorlib-counter{
+	position: relative;
+	z-index: -1;
+	padding-top: 7em;
+	padding-bottom: 7em;
+	.colorlib-heading{
+		margin-bottom: 30px;
+		h2{
+			color: $brand-white;
+		}
+		p{
+			font-size: 22px;
+			color: rgba(255,255,255,.8);
+		}
+	}
+}
+
+.colorlib-counters {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	.overlay {
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		@include gradient-background();
+		opacity: .96;
+	}
+	.icon{
+		margin-bottom: 20px;
+		width: 100px;
+		z-index: 0;
+		i{
+			font-size: 50px;
+			color: rgba(255,255,255,.9);
+			z-index: 1;
+		}
+	}
+	.desc{
+		padding-left: 80px;
+	}
+	.colorlib-counter {
+		font-size: 75px;
+		display: block;
+		color: $brand-white;
+		font-family: $font-secondary;
+		width: 100%;
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+	.colorlib-counter-label {
+		color: rgba($brand-white,.8);
+		font-size: 20px;
+		display: block;
+        font-weight: 300;
+        font-family: $font-secondary;
+	}
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.container:after {
+    clear: both;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .col-sm-4 {
+      float: left;
+      width: 33.33333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4, .col-md-12 {
+      float: left;
+    }
+    .col-md-4 {
+        width: 33.33333%;
+      }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
