@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import Footer from '../footer/Footer'
+import VideoSection from '../videoSection/VideoSection'
+import ProjectFeed from '../projectFeed/ProjectFeed'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -16,6 +18,8 @@ const Body = () => {
     return (
         <div>
             <WelcomeSection/>
+            <VideoSection/>
+            <ProjectFeed/>
         </div>
     )
 }
