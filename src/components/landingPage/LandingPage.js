@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import VideoSection from '../videoSection/VideoSection'
 import ProjectFeed from '../projectFeed/ProjectFeed'
+import Footer from '../footer/Footer'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -38,6 +39,7 @@ export default class LandingPage extends Component {
                 </Helmet>
                 <NavBar/>
                 <Body/>
+                <Footer/>
             </div>
         )
     }
