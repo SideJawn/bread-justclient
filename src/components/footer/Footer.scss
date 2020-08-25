@@ -61,18 +61,6 @@ outline: thin dotted;
 outline: 5px auto -webkit-focus-ring-color;
 outline-offset: -2px;
 }
-// Reset the box-sizing
-//
-// Heads up! This reset may cause conflicts with some third-party widgets.
-// For recommendations on resolving such conflicts, see
-// http://getbootstrap.com/getting-started/#third-box-sizing
-* {
-	@include box-sizing(border-box);
-  }
-  *:before,
-  *:after {
-	@include box-sizing(border-box);
-  }
 
 ::selection {
 color: #fff;
