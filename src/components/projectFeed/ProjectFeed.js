@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './ProjectFeed.scss'
 import Icon from "../../icons/icon"
-import personImage from '../../images/person1.jpg'
+import ProjectCard from '../projectCard/ProjectCard'
 
 export default class ProjectFeed extends Component {
     render() {
@@ -15,68 +15,14 @@ export default class ProjectFeed extends Component {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 card">
-                            <article>
-                                <h2>Building the Mention Sales Application on Unapp</h2>
-                                <p class="status"><span>In Progress</span></p>
-                                <p class="admin"><span>May 12, 2018</span></p>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-                                <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by Dave Miller</a></p>
-                                <p class="expand-btn">Tap to explore positions</p>
-                            </article>
-                        </div>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
                     </div>
                 </div>
                 <div>
