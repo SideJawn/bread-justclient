@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
+import CallToAction from '../callToAction/CallToAction'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -34,6 +35,7 @@ export default class LandingPage extends Component {
                 </Helmet>
                 <NavBar/>
                 <Body/>
+                <CallToAction/>
             </div>
         )
     }
