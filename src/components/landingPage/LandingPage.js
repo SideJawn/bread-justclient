@@ -4,6 +4,7 @@ import WelcomeSection from '../welcomeSection/WelcomeSection'
 import CallToAction from '../callToAction/CallToAction'
 import VideoSection from '../videoSection/VideoSection'
 import ProjectFeed from '../projectFeed/ProjectFeed'
+import Footer from '../footer/Footer'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -20,6 +21,7 @@ const Body = () => {
             <WelcomeSection/>
             <VideoSection/>
             <ProjectFeed/>
+            <CallToAction/>
         </div>
     )
 }
@@ -39,7 +41,7 @@ export default class LandingPage extends Component {
                 </Helmet>
                 <NavBar/>
                 <Body/>
-                <CallToAction/>
+                <Footer/>
             </div>
         )
     }
