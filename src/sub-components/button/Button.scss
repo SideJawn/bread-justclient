@@ -1,0 +1,52 @@
+// Bootstrap begins
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 20px; 
+    font-family: "Nunito", Arial, sans-serif;
+    text-align: center;
+}
+.btn.btn-md {
+    padding: 8px 20px !important; 
+}
+.btn.btn-lg {
+    padding: 18px 36px !important; 
+}
+.btn:hover, .btn:active, .btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important; 
+}
+
+.btn-primary {
+    background: #4aca85;
+    color: #fff;
+    border: 1px solid #4aca85; 
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background: #5ed092 !important;
+    border-color: #5ed092 !important; 
+}
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #4aca85;
+    border: 1px solid #4aca85; 
+}
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+    background: #4aca85;
+    color: #fff; 
+}
+.btn-custom{
+    font-size: 16px;
+}
+  
