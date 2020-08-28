@@ -7,13 +7,8 @@
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-white: #fff;
 $brand-black: #000;
-$brand-darker: #303133;
 
-//** Global textual link color.
-$link-color:            $brand-primary !default;
-//** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
-//** Link hover decoration.
+// //** Global textual link color.
 $link-hover-decoration: underline !default;
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
@@ -23,11 +18,6 @@ $screen-sm:                  768px !default;
 //
 // Note: Deprecated `.box-shadow()` as of v3.1.0 since all of Bootstrap's
 // supported browsers that have box shadow capabilities now support it.
-
-@mixin box-shadow($shadow...) {
-  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
-          box-shadow: $shadow;
-}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -50,13 +40,6 @@ $screen-sm:                  768px !default;
   // WebKit
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
-
-// Box sizing
-@mixin box-sizing($boxmodel) {
-  -webkit-box-sizing: $boxmodel;
-     -moz-box-sizing: $boxmodel;
-          box-sizing: $boxmodel;
 }
 
 ::selection {
@@ -273,7 +256,7 @@ $screen-sm:                  768px !default;
     padding-right: 20px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
     .col-md-4 {
     float: left;
     width: 33.33333%;
@@ -326,101 +309,93 @@ body {
     color: gray;
     background: whitesmoke; }
 
-
+// Burger starts here
 .colorlib-nav-toggle {
-  width:25px;
-  height:25px;
-  cursor: pointer;
-  text-decoration: none;
-  top: 1.2em !important;
-  &.active i {
-		&::before, &::after {
-			background: $brand-darker;
-		}
-  }
-  &:hover, &:focus, &:active {
-  	outline: none;
-  	border-bottom: none!important;
-  }
-  i {
-  	position: relative;
-	  display: inline-block;
-	  width: 25px;
-	  height: 2px;
-	  color: #252525;
-	  font:bold 14px/.4 Helvetica;
-	  text-transform: uppercase;
-	  text-indent:-55px;
-	  background: #252525;
-	  transition: all .2s ease-out;
-		 &::before, &::after {
-		  content:'';
-		  width: 25px;
-		  height: 2px;
-		  background: #252525;
-		  position: absolute;
-		  left:0;
-		  transition:all .2s ease-out;
-	  }
-  }
-  &.colorlib-nav-white {
-  	> i {
-  		color:$brand-white;
-  		background: $brand-white;
-  		&::before, &::after {
-  			background: $brand-white;
-  		}
-  	}
-  }
-}
-
-.colorlib-nav-toggle i::before {
-  top: -7px;
-}
-.colorlib-nav-toggle i::after {
-  bottom: -7px;
-}
-.colorlib-nav-toggle:hover i::before {
-  top: -10px;
-}
-.colorlib-nav-toggle:hover i::after {
-  bottom: -10px;
-}
-.colorlib-nav-toggle.active i {
-	background: transparent;
-}
-.colorlib-nav-toggle.active i::before {
-  top:0;
-  -webkit-transform: rotateZ(45deg);
-     -moz-transform: rotateZ(45deg);
-      -ms-transform: rotateZ(45deg);
-       -o-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-          background: $brand-white;
-}
-.colorlib-nav-toggle.active i::after {
-  bottom:0;
-  -webkit-transform: rotateZ(-45deg);
-     -moz-transform: rotateZ(-45deg);
-      -ms-transform: rotateZ(-45deg);
-       -o-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
-          background: $brand-white;
-}
-.colorlib-nav-toggle {
-  position: absolute;
-  right: 0px;
-  top: 65px;
-  z-index: 21;
-  padding: 6px 0 0 0;
-  display: block;
-  margin: 0 auto;
-  display: none;
-  height: 44px;
-  width: 44px;
-  z-index: 2001;
-  border-bottom: none!important;
-  @media screen and (max-width: $screen-sm) {
-  	display: block;
-  }
-}
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	text-decoration: none;
+	top: 1.2em !important; }
+	.colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+		background: #303133; }
+	.colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+		outline: none;
+		border-bottom: none !important; }
+	.colorlib-nav-toggle i {
+		position: relative;
+		display: inline-block;
+		width: 25px;
+		height: 2px;
+		color: #252525;
+		font: bold 14px/.4 Helvetica;
+		text-transform: uppercase;
+		text-indent: -55px;
+		background: #252525;
+		-webkit-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
+		transition: all .2s ease-out; }
+		.colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+		content: '';
+		width: 25px;
+		height: 2px;
+		background: #252525;
+		position: absolute;
+		left: 0;
+		-webkit-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
+		transition: all .2s ease-out; }
+	.colorlib-nav-toggle.colorlib-nav-white > i {
+		color: #fff;
+		background: #fff; }
+		.colorlib-nav-toggle.colorlib-nav-white > i::before, .colorlib-nav-toggle.colorlib-nav-white > i::after {
+		background: #fff; }
+	
+	.colorlib-nav-toggle i::before {
+	top: -7px; }
+	
+	.colorlib-nav-toggle i::after {
+	bottom: -7px; }
+	
+	.colorlib-nav-toggle:hover i::before {
+	top: -10px; }
+	
+	.colorlib-nav-toggle:hover i::after {
+	bottom: -10px; }
+	
+	.colorlib-nav-toggle.active i {
+	background: transparent; }
+	
+	.colorlib-nav-toggle.active i::before {
+	top: 0;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	background: #fff; }
+	
+	.colorlib-nav-toggle.active i::after {
+	bottom: 0;
+	-webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	-ms-transform: rotateZ(-45deg);
+	-o-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+	background: #fff; }
+	
+	.colorlib-nav-toggle {
+	margin-top: -20px;
+	position: absolute;
+	right: 0px;
+	top: 65px;
+	z-index: 21;
+	padding: 6px 0 0 0;
+	display: block;
+	display: none;
+	height: 44px;
+	width: 44px;
+	z-index: 2001;
+	border-bottom: none !important; }
+	@media screen and (max-width: $screen-sm) {
+		.colorlib-nav-toggle {
+		display: block; } }
