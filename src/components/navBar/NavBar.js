@@ -16,13 +16,84 @@ export default class NavBar extends Component {
     handleClose = () => {
         this.setState({isDisplayed: "none"})
         this.setState({isAnimated: ""})
-    }
+	}
+	
+	// rightNav = () => {
+	// 	return (
+	// 	  <ul>
+	// 		<li>Home</li>
+	// 		<li>About Us</li>
+	// 		<li>Contact Us</li>
+	// 		<li>Sign In</li>
+	// 		<li>Sign Up</li>
+	// 	  </ul>
+	// 	)
+	// }
+	  
+	// offcanvasMenu = () => {
+	// 	<div id="colorlib-offcanvas" />
+	// 	$('#page').prepend('');
+	// 	$('#page').prepend('<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle colorlib-nav-white"><i></i></a>');
+	// 	var clone1 = $('.menu-1 > ul').clone();
+	// 	$('#colorlib-offcanvas').append(clone1);
+	// 	var clone2 = $('.menu-2 > ul').clone();
+	// 	$('#colorlib-offcanvas').append(clone2);
+
+	// 	$('#colorlib-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+	// 	$('#colorlib-offcanvas')
+	// 		.find('li')
+	// 		.removeClass('has-dropdown');
+
+	// 	// Hover dropdown menu on mobile
+	// 	$('.offcanvas-has-dropdown').mouseenter(function(){
+	// 		var $this = $(this);
+
+	// 		$this
+	// 			.addClass('active')
+	// 			.find('ul')
+	// 			.slideDown(500, 'easeOutExpo');				
+	// 	}).mouseleave(function(){
+
+	// 		var $this = $(this);
+	// 		$this
+	// 			.removeClass('active')
+	// 			.find('ul')
+	// 			.slideUp(500, 'easeOutExpo');				
+	// 	});
+
+
+	// 	$(window).resize(function(){
+
+	// 		if ( $('body').hasClass('offcanvas') ) {
+
+    // 			$('body').removeClass('offcanvas');
+    // 			$('.js-colorlib-nav-toggle').removeClass('active');
+				
+	//     	}
+	// 	});
+	// }
+
+	// burgerMenu = () => {
+	// 	$('body').on('click', '.js-colorlib-nav-toggle', function(event){
+	// 		var $this = $(this);
+
+
+	// 		if ( $('body').hasClass('overflow offcanvas') ) {
+	// 			$('body').removeClass('overflow offcanvas');
+	// 		} else {
+	// 			$('body').addClass('overflow offcanvas');
+	// 		}
+	// 		$this.toggleClass('active');
+	// 		event.preventDefault();
+
+	// 	});
+	// }
 
     render() {
         return (
             <nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
-				<div style={{backgroundColor: "#29313c", borderRadius:"20px", height:"50px"}}>
+				<div style={{backgroundColor: "#29313c", height:"50px"}}>
 					<div class="row">
                         <div class="col-md-4 text-left menu-1" style={{fontSize: "20px", marginTop: "3px"}}>
 							<ul>

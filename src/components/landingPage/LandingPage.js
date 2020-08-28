@@ -2,12 +2,17 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import NavBar from '../navBar/NavBar'
+import VideoSection from '../videoSection/VideoSection'
+import ProjectFeed from '../projectFeed/ProjectFeed'
+import Footer from '../footer/Footer'
 import './LandingPage.scss'
 
 const Body = () => {
     return (
         <div>
             <WelcomeSection/>
+            <VideoSection/>
+            <ProjectFeed/>
         </div>
     )
 }
@@ -27,6 +32,7 @@ export default class LandingPage extends Component {
                 </Helmet>
                 <NavBar/>
                 <Body/>
+                <Footer/>
             </div>
         )
     }

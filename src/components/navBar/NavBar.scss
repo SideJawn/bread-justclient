@@ -59,19 +59,6 @@ $screen-sm:                  768px !default;
           box-sizing: $boxmodel;
 }
 
-// Reset the box-sizing
-//
-// Heads up! This reset may cause conflicts with some third-party widgets.
-// For recommendations on resolving such conflicts, see
-// http://getbootstrap.com/getting-started/#third-box-sizing
-* {
-  @include box-sizing(border-box);
-}
-*:before,
-*:after {
-  @include box-sizing(border-box);
-}
-
 ::selection {
   color: #fff;
   background: #4aca85; }
@@ -138,13 +125,6 @@ $screen-sm:                  768px !default;
 	margin: 0 auto;
 	@media screen and (max-width: $screen-sm ) {
 		margin: 0;
-	}
-	.top-menu{
-		padding: 30px 30px;
-		@media screen and (max-width: $screen-sm ) {
-			padding: 28px 1em;
-		}
-
 	}
 	#colorlib-logo {
 		font-size: 20px;
@@ -347,7 +327,6 @@ body {
     background: whitesmoke; }
 
 
-/* Burger Menu
 .colorlib-nav-toggle {
   width:25px;
   height:25px;
@@ -445,4 +424,3 @@ body {
   	display: block;
   }
 }
-*/

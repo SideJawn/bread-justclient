@@ -1,0 +1,185 @@
+// Colors
+$brand-primary:         darken(#428bca, 6.5%);
+
+//** Global textual link color.
+$link-color:            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+// Overrides
+$brand-white: #fff;
+$brand-black: #000;
+$brand-darker: #303133;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  375px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+	-webkit-box-sizing: $boxmodel;
+	   -moz-box-sizing: $boxmodel;
+			box-sizing: $boxmodel;
+  }
+
+@mixin tab-focus() {
+// Default
+outline: thin dotted;
+// WebKit
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+
+::selection {
+color: #fff;
+background: #4aca85; }
+
+#colorlib-footer {
+	background: $brand-darker;
+	color: rgba($brand-white,.6)!important;
+	padding-top: 6em;
+
+	.colorlib-widget{
+		p{
+			font-size: 13px;
+			max-width: 330px;
+		}
+		@media screen and(max-width: $screen-xs){
+			margin-bottom: 40px;
+			width: 100%;
+			float: left;
+		}
+	}
+	.colorlib-footer-links {
+		padding: 0;
+		margin: 0;
+		@media screen and(max-width: $screen-sm){
+			margin-bottom: 30px;
+		}
+		li {
+			padding: 0;
+			margin: 0 0 10px 0;
+			list-style: none;
+			display: block;
+			font-size: 13px;
+			a {
+				color: rgba($brand-white,.9);
+				text-decoration: none;
+				i{
+					padding-right: 10px;
+					color: $brand-white;
+				}
+			}
+		}
+	}
+
+	h4 {
+		margin-bottom: 30px;
+		font-size: 12px;
+		color: darken($brand-white,10%);
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 700;
+	}
+	.copy{
+		background: lighten($brand-black,15%);
+		padding: 7em 0;
+		p{
+			margin-bottom: 0;
+			color: $brand-white;
+			font-size: 13px;
+			small{
+				a{
+					color: rgba(255,255,255,.7);
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: #4aca85;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s; }
+	a:hover, a:active, a:focus {
+	  color: #4aca85;
+	  outline: none;
+	  text-decoration: none; }
+  
+//
+// Remove the gray background color from active links in IE 10.
+//
+
+a {
+	background-color: transparent;
+  }
+
+body {
+	font-family: "Poppins", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 2;
+	color: gray;
+	background: whitesmoke; }
+  
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .row:before, .row:after {
+    content: " ";
+    display: table;
+  }
+  .row:after {
+    clear: both;
+  }
+
+.row-pb-md {
+	padding-bottom: 5em !important;
+}
+.col-md-3 {
+    width: 25%;
+  }
+.about-paragraph {
+	width: 400px;
+}
+#footer-nav {
+	float: left;
+}
+#footer-contact {
+	float: left;
+}
