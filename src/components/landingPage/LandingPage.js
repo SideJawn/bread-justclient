@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
-import VideoSection from '../videoSection/VideoSection'
+import GeneralIntroduction from '../generalIntroduction/GeneralIntroduction'
 import ProjectFeed from '../projectFeed/ProjectFeed'
 import Footer from '../footer/Footer'
 import './LandingPage.scss'
@@ -18,7 +18,7 @@ const Body = () => {
     return (
         <div>
             <WelcomeSection/>
-            <VideoSection/>
+            <GeneralIntroduction/>
             <ProjectFeed/>
         </div>
     )
