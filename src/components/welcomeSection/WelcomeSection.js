@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '../../sub-components/button/Button'
 import './WelcomeSection.css'
 import background from '../../images/marvin-meyer-IndexWorkSpace-unsplash.jpg'
 
@@ -13,7 +14,7 @@ export default class WelcomeSection extends Component {
                                 <div class="animate-box">
                                     <h2>Welcome to the best hustler recruitment platform</h2>
                                     <p>by Hustlers, for Hustlers</p>
-                                    <p><a href="" class="btn btn-primary btn-lg btn-custom">Join now</a></p>
+                                    <p><Button title = "Join now"/></p>
                                 </div>
                             </div>
                         </div>

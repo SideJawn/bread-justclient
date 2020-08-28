@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './CallToAction.scss'
+import Button from '../../sub-components/button/Button'
 
 export default class CallToAction extends Component {
     render() {
@@ -12,12 +13,12 @@ export default class CallToAction extends Component {
 						<h2>Want to join the entrepreneurial movement?</h2>
 					</div>
 				</div>
-				<div class="animate-box">
-					<div class="col-md-12 col-md-offset-0">
-								<p><a href="" class="btn btn-primary btn-lg btn-custom">Lets get this bread.</a></p>
-								<div>
-									<p></p>
-								</div>
+				<div class="animate-box text-center">
+					<div class="col-md-12 col-md-offset-0 ">
+						<p><Button title = "Let's get this bread."/></p>
+						<div>
+							<p></p>
+						</div>
 					</div>
 				</div>
 			</div>

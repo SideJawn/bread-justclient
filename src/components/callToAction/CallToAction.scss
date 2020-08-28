@@ -1,22 +1,5 @@
 // Colors
-$brand-primary: #4aca85 !default;
 $brand-white: #fff;
-$brand-black: #000;
-
-// Extra small screen / phone
-//** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  480px !default;
-//** Deprecated `$screen-xs-min` as of v3.2.0
-$screen-xs-min:              $screen-xs !default;
-//** Deprecated `$screen-phone` as of v3.0.1
-$screen-phone:               $screen-xs-min !default;
-
-// Small screen / tablet
-//** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  768px !default;
-$screen-sm-min:              $screen-sm !default;
-//** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min !default;
 
 @mixin gradient-background(){
     background: #499bea;
@@ -28,13 +11,6 @@ $screen-tablet:              $screen-sm-min !default;
     background: linear-gradient(135deg, #499bea 0%, #798eea 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#798eea', GradientType=1 );
 }
-
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-       -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-            border-radius: $radius;
-  }
 
 // Style begins
 #colorlib-cta{
