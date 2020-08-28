@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
+import CallToAction from '../callToAction/CallToAction'
 import VideoSection from '../videoSection/VideoSection'
 import ProjectFeed from '../projectFeed/ProjectFeed'
 import Footer from '../footer/Footer'
@@ -20,6 +21,7 @@ const Body = () => {
             <WelcomeSection/>
             <VideoSection/>
             <ProjectFeed/>
+            <CallToAction/>
         </div>
     )
 }

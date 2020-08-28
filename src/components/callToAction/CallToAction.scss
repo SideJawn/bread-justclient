@@ -1,0 +1,45 @@
+// Colors
+$brand-white: #fff;
+
+@mixin gradient-background(){
+    background: #499bea;
+    background: -moz-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #499bea), color-stop(100%, #798eea));
+    background: -webkit-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+    background: -o-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+    background: -ms-linear-gradient(-45deg, #499bea 0%, #798eea 100%);
+    background: linear-gradient(135deg, #499bea 0%, #798eea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#798eea', GradientType=1 );
+}
+
+// Style begins
+#colorlib-cta{
+	position: relative;
+}
+.colorlib-cta {
+	clear: both;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	.overlay-cta {
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		@include gradient-background();
+		opacity: .96;
+	}
+	.colorlib-heading-cta{
+		margin-top: 30px;
+		h2{
+            color: $brand-white;
+            font-size: 33px;
+		}
+		p{
+			font-size: 20px;
+			color: rgba(255,255,255,.7);
+		}
+	}
+}
