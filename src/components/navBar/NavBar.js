@@ -3,13 +3,13 @@ import './NavBar.scss'
 import Burger from '../../sub-components/burger/Burger.js'
 
 export default class NavBar extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isDisplayed: "none",
-            isAnimated: ""
-        };
-    }
+	constructor(props) {
+		super(props)
+		this.state = {
+			isDisplayed: "none",
+			isAnimated: ""
+		};
+	}
     handleOpen = () => {
         this.setState({isDisplayed: "block"})
         this.setState({isAnimated: "animated-fast fadeInUpMenu"})
