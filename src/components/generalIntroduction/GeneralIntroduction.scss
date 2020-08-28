@@ -195,22 +195,3 @@ h1, h2, h3, h4, h5, h6, figure {
     text-align: center;
 }
 /* ---------------BootStrap Ends--------------- */
-
-/* --------------Glyphicon Starts-----------------*/
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 45px;
-  color: $brand-secondary;
-}
-.glyphicon-list-alt               { &:before { content: "\e032"; } }
-.glyphicon-user                   { &:before { content: "\e008"; } }
-.glyphicon-cloud-download         { &:before { content: "\e197"; } }
-/* --------------Glyphicon Ends-----------------*/

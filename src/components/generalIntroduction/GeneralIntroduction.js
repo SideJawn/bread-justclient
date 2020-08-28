@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "../generalIntroduction/GeneralIntroduction.scss"
-// Icon Set: https://icomoon.io/app/#/select
+import Icon from '../../icons/icon'
 //import {Glyphicon} from 'react-bootstrap';
 
 export default class VideoSection extends Component {
@@ -19,8 +19,8 @@ export default class VideoSection extends Component {
                             <div class="row">
                                 <div class="col-md-4 text-center animate-box">
                                     <div class="services">
-                                        <span class="glyphicon">
-                                            <i class="glyphicon-list-alt"></i>
+                                        <span class="icon">
+                                            <Icon color="#798eea" size={65} icon="bubble"/>
                                         </span>
                                         <div class="desc">
                                             <h3>Share your ideas</h3>
@@ -30,8 +30,8 @@ export default class VideoSection extends Component {
                                 </div>
                                 <div class="col-md-4 text-center animate-box">
                                     <div class="services">
-                                        <span class="glyphicon">
-                                            <i class="glyphicon-user"></i>
+                                        <span class="icon">
+                                            <Icon color="#798eea" size={65} icon="users"/>
                                         </span>
                                         <div class="desc">
                                             <h3>Build a team</h3>
@@ -41,8 +41,8 @@ export default class VideoSection extends Component {
                                 </div>
                                 <div class="col-md-4 text-center animate-box">
                                     <div class="services">
-                                        <span class="glyphicon">
-                                            <i class="glyphicon-cloud-download "></i>
+                                        <span class="icon">
+                                            <Icon color="#798eea" size={65} icon="cloud-download"/>
                                         </span>
                                         <div class="desc">
                                             <h3>Make ideas reality</h3>
