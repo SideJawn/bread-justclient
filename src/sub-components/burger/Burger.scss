@@ -144,7 +144,7 @@ $form-group-margin-bottom: 30px !default;
 		.colorlib-nav-toggle {
 		display: block; } }
 #colorlib-offcanvas {
-	position: absolute;
+	position: fixed;
 	z-index: 1901;
 	width: 270px;
 	background: #1a1a1a;
@@ -180,11 +180,10 @@ $form-group-margin-bottom: 30px !default;
 		padding: 0;
 		margin: 0; }
 		#colorlib-offcanvas ul li {
-		padding: 0;
+		padding: 8px;
 		margin: 0;
 		list-style: none; }
 		#colorlib-offcanvas ul li > ul {
-			padding-left: 20px;
 			display: none; }
 		#colorlib-offcanvas ul li.offcanvas-has-dropdown > a {
 			display: block;
@@ -220,7 +219,7 @@ $form-group-margin-bottom: 30px !default;
 			padding-bottom: 5px; 
 }
 #colorlib-offcanvas {
-	position: absolute;
+	position: fixed;
 	z-index: 1901;
 	width: 270px;
 	background: lighten($brand-black, 10%);
@@ -250,12 +249,11 @@ $form-group-margin-bottom: 30px !default;
 		padding: 0;
 		margin: 0;
 		li {
-			padding: 0;
+			padding: 8px;
 			margin: 0;
 			list-style: none;
 			display: list-item;
 			> ul {
-				padding-left: 20px;
 				display: none;
 			}
 			&.offcanvas-has-dropdown {
@@ -293,4 +291,16 @@ $form-group-margin-bottom: 30px !default;
 			}
 		}
 	}
+}
+.dropdown-icon {
+	position: absolute;
+	width:11px;
+	top: 41%;
+	right: -3%;
+	color: rgba(255, 255, 255, 0.5);
+}
+.menu-division {
+	border-top: 1px solid #ccc;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }

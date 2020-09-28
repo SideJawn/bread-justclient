@@ -22,7 +22,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav class="colorlib-nav" role="navigation">
-			<Burger/>
+			<Burger href="javascript:void(0)"/>
 			<div class="top-menu">
 				<div style={{backgroundColor: "#29313c", height:"50px"}}>
 					<div class="row">
