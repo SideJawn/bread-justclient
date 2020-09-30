@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import "../generalIntroduction/GeneralIntroduction.scss"
+import './VideoSection.scss'
+import Icon from "./../../icons/icon"
 
 export default class VideoSection extends Component {
     render() {
@@ -12,8 +13,43 @@ export default class VideoSection extends Component {
                             <p>Bread is where we join entrepreneurial efforts to create our own projects and experiences.</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box">
+                            <span class="play"><a href="" class="pulse popup-vimeo"><Icon color="white" size={30} className="play-button" icon="play3"/></a></span>
+                        </div>
+                    </div>
                 </div>
 		    </div>
         )
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
