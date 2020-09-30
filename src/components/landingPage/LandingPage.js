@@ -4,6 +4,7 @@ import WelcomeSection from '../welcomeSection/WelcomeSection'
 import GeneralIntroduction from '../generalIntroduction/GeneralIntroduction'
 import ProjectFeed from '../projectFeed/ProjectFeed'
 import Footer from '../footer/Footer'
+import FlowIntroduction from '../flowIntroduction/FlowIntroduction'
 import './LandingPage.scss'
 
 const NavBar = () => {
@@ -19,6 +20,7 @@ const Body = () => {
         <div>
             <WelcomeSection/>
             <GeneralIntroduction/>
+            <FlowIntroduction/>
             <ProjectFeed/>
         </div>
     )
