@@ -2,18 +2,14 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import WelcomeSection from '../welcomeSection/WelcomeSection'
 import GeneralIntroduction from '../generalIntroduction/GeneralIntroduction'
+import NavBar from '../navBar/NavBar'
+import CallToAction from '../callToAction/CallToAction'
+import VideoSection from '../videoSection/VideoSection'
+
 import ProjectFeed from '../projectFeed/ProjectFeed'
 import Footer from '../footer/Footer'
 import FlowIntroduction from '../flowIntroduction/FlowIntroduction'
 import './LandingPage.scss'
-
-const NavBar = () => {
-    return (
-        <div>
-            Nav goes here.
-        </div>
-    )
-}
 
 const Body = () => {
     return (
@@ -22,6 +18,7 @@ const Body = () => {
             <GeneralIntroduction/>
             <FlowIntroduction/>
             <ProjectFeed/>
+            <CallToAction/>
         </div>
     )
 }
