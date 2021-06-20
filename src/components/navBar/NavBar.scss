@@ -12,7 +12,7 @@ $brand-black: #000;
 $link-hover-decoration: underline !default;
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  768px !default;
+$screen-sm:                  993px !default;
 
 // Drop shadows
 //
@@ -256,10 +256,10 @@ $screen-sm:                  768px !default;
     padding-right: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
     .col-md-4 {
     float: left;
-    width: 33.33333%;
+    width: 49.33333%;
     }
 }
 

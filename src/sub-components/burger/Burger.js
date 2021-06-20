@@ -62,13 +62,13 @@ export default class Burger extends Component {
 
   render(){
     return (
-      <div ref={this.setWrapperRef} class={this.state.isMenuDisplayed ? "overflow offcanvas" : ""}>
-          <a href="javascript:void(0)" onClick= {this.toggleBurger} class={this.state.menuClass}><i></i></a>
+      <div ref={this.setWrapperRef} className={this.state.isMenuDisplayed ? "overflow offcanvas" : ""}>
+          <a href='#' onClick= {this.toggleBurger} className={this.state.menuClass}><i></i></a>
           <div id="colorlib-offcanvas">
             <ul>
               <li><a href="">About</a></li>
-              <li class="" >
-                <a onClick= {this.toggleCategories}>Categories <Icon color="white" class="dropdown-icon" size={10} icon="circle-down"/></a>
+              <li className="" >
+                <a onClick= {this.toggleCategories}>Categories <Icon color="white" className="dropdown-icon" size={10} icon="circle-down"/></a>
                   <SlideDown className={'pure-menu pure-menu-scrollable dropdown-slidedown'} closed={this.state.isCategoriesClosed}>
                     <ul>
                       <li><a href="">Tech</a></li>
@@ -80,8 +80,8 @@ export default class Burger extends Component {
                   </SlideDown>
               </li>
             </ul>
-            <hr class="menu-division"/>
-            <ul class="actions">
+            <hr className="menu-division"/>
+            <ul className="actions">
               <li><a href="">log in</a></li>
               <li><a href="">sign up</a></li>
               <li><a href="">create</a></li>

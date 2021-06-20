@@ -21,6 +21,12 @@ $brand-white: #fff;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
+	background: #fff;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
 	.overlay-cta {
 		z-index: 0;
 		position: absolute;
@@ -28,18 +34,18 @@ $brand-white: #fff;
 		top: 0;
 		left: 0;
 		right: 0;
-		@include gradient-background();
+		// @include gradient-background();
 		opacity: .96;
 	}
 	.colorlib-heading-cta{
 		margin-top: 30px;
 		h2{
-            color: $brand-white;
+			color: #303133;
             font-size: 33px;
 		}
 		p{
 			font-size: 20px;
-			color: rgba(255,255,255,.7);
+
 		}
 	}
 }

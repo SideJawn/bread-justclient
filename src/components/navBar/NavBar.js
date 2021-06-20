@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './NavBar.scss'
 import Burger from '../../sub-components/burger/Burger.js'
 
+
 export default class NavBar extends Component {
 	constructor(props) {
 		super(props)
@@ -19,21 +20,46 @@ export default class NavBar extends Component {
         this.setState({isAnimated: ""})
 	}
 
+	// populateCategories(data) {
+	// 	let categoriesArray = [];
+	// 	for (let i = 0; i < data.num_results; i++) {
+	// 		let category = data.results[i];
+	// 		categoriesArray.push(
+	// 			<li><a href="/category">{category.display_name}</a></li>
+	// 		);
+	// 	}
+	// 	this.setState({
+	// 		isLoading: false,
+	// 		categoriesData: data.results,
+	// 		categoryNames: categoriesArray
+	// 	});
+
+	// }
+
+	// componentDidMount() {
+    //     let url = `/categories`
+    //     fetch(url, {mode:'no-cors'})
+    //         .then(response => response.json())
+    //         .then(data => this.populateCategories(data))
+    //         // Catch any errors we hit and update the app
+    //         .catch(error => this.setState({ error, isLoading: false }));
+    // }
+
     render() {
         return (
-            <nav class="colorlib-nav" role="navigation">
+            <nav className="colorlib-nav" role="navigation">
 			<Burger href="javascript:void(0)"/>
-			<div class="top-menu">
+			<div className="top-menu">
 				<div style={{backgroundColor: "#29313c", height:"50px"}}>
-					<div class="row">
-                        <div class="col-md-4 text-left menu-1" style={{fontSize: "20px", marginTop: "3px"}}>
+					<div className="row">
+                        <div className="col-md-4 text-left menu-1" style={{fontSize: "20px", marginTop: "3px"}}>
 							<ul>
 								<li><a href="/about">About</a></li>
-                                    <li class="has-dropdown"onMouseEnter = { this.handleOpen }
+                                    <li className="has-dropdown"onMouseEnter = { this.handleOpen }
                                         onMouseLeave = { this.handleClose }>
 										<a href="/category">
                                             Categories </a>
-	                  					<ul id="dropdown"class={this.state.isAnimated} style={{display: this.state.isDisplayed}}>
+	                  					<ul id="dropdown"className={this.state.isAnimated} style={{display: this.state.isDisplayed}}>
 											<li><a href="/category">Tech</a></li>
 											<li><a href="/category">Gadgets</a></li>
 											<li><a href="/category">Entertainment</a></li>
@@ -43,8 +69,8 @@ export default class NavBar extends Component {
                   					</li>
 							</ul>
 						</div>
-						<div class="col-md-4 " style={{textAlign: "center", fontSize: "20px", marginTop: "6px"}} id="colorlib-logo"><a href="/">bread</a></div>
-						<div class="text-right menu-1" style={{marginTop: "8px", marginRight: "18px"}}>
+						<div className="col-md-4 " style={{textAlign: "center", fontSize: "20px", marginTop: "6px"}} id="colorlib-logo"><a href="/">bread</a></div>
+						<div className="text-right menu-1" style={{marginTop: "8px", marginRight: "18px"}}>
 							<ul>
 								<li><a href="">log in</a></li>
 								<li><a href="">sign up</a></li>

@@ -5,25 +5,36 @@ import personImage from '../../images/person1.jpg'
 export default class ProjectCard extends Component {
     constructor(props) {
         super(props);
+        const statusDict = {
+            N : 'New',
+            A : 'Active',
+            S : 'Suspended',
+            R : 'Recruiting',
+            C : 'Complete',
+            I : 'In Progress'
+        };
         this.state = {
-            title : 'Building the Mention Sales Application on Unapp',
-            status : 'In Progress',
-            datePosted : 'May 12, 2018',
-            summary : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            author : 'Dave Miller',
+            title : this.props.title,
+            status : statusDict[this.props.status],
+            datePosted : this.props.datePosted,
+            summary : this.props.summary,
+            author : this.props.author
         };
     }
 
     render() {
+        var date = new Date(this.state.datePosted);
         return (
-            <div class="col-md-4">
+            <div className="project-card">
                 <article>
                     <h2>{this.state.title}</h2>
-                    <p class="status"><span>{this.state.status}</span></p>
-                    <p class="admin"><span>{this.state.datePosted}</span></p>
+                    <p className="status"><span>{this.state.status}</span></p>
+                    <p className="admin"><span>{date.toDateString()}</span></p>
                     <p>{this.state.summary}</p>
-                    <p class="author-wrap"><a href="#" class="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" class="author">by {this.state.author}</a></p>
-                    <p class="expand-btn">Tap to explore positions</p>
+                    <div className="project-footer">
+                    <p className="author-wrap"><a href="#" className="author-img" style={{backgroundImage: `url(${personImage})`}}></a> <a href="#" className="author">by {this.state.author}</a></p>
+                    {/* <p className="expand-btn">Tap to explore positions</p> */}
+                    </div>
                 </article>
             </div>
         )
