@@ -5,6 +5,6 @@ import NavBar from './navBar/NavBar'
 import ProjectCard from './projectCard/ProjectCard'
 import ProjectFeed from './projectFeed/ProjectFeed'
 import VideoSection from './videoSection/VideoSection'
-import WelcomeSection from './welcomeSection/WelcomeSection'
+import PageHeader from './pageHeader/PageHeader'
 
-export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, WelcomeSection};
+export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, PageHeader};

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './NavBar.scss'
 import Burger from '../../sub-components/burger/Burger.js'
-
+import { Link } from 'react-router-dom';
 
 export default class NavBar extends Component {
 	constructor(props) {
@@ -54,7 +54,7 @@ export default class NavBar extends Component {
 					<div className="row">
                         <div className="col-md-4 text-left menu-1" style={{fontSize: "20px", marginTop: "3px"}}>
 							<ul>
-								<li><a href="/about">About</a></li>
+								<li><Link to="/about">About</Link></li>
                                     <li className="has-dropdown"onMouseEnter = { this.handleOpen }
                                         onMouseLeave = { this.handleClose }>
 										<a href="/category">
@@ -69,7 +69,7 @@ export default class NavBar extends Component {
                   					</li>
 							</ul>
 						</div>
-						<div className="col-md-4 " style={{textAlign: "center", fontSize: "20px", marginTop: "6px"}} id="colorlib-logo"><a href="/">bread</a></div>
+						<div className="col-md-4 " style={{textAlign: "center", fontSize: "20px", marginTop: "6px"}} id="colorlib-logo"><Link to="/">bread</Link></div>
 						<div className="text-right menu-1" style={{marginTop: "8px", marginRight: "18px"}}>
 							<ul>
 								<li><a href="">log in</a></li>
