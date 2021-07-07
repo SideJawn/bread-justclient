@@ -1,0 +1,22 @@
+$brand-secondary: #798eea !default;
+$brand-white: #fff;
+$brand-overlay-color: #4c4a8a;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
+}
+.row-pb-lg {
+	padding-bottom: 7em !important;
+}
+#about-paragraph {
+	padding-top: 7em !important;
+}

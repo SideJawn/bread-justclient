@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
 import {NavBar, Footer } from '../components'
+import './index.scss'
+import './icomoon.css'
 
 const Layout = (props) => (
     <div>

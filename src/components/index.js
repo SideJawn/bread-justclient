@@ -6,5 +6,7 @@ import ProjectCard from './projectCard/ProjectCard'
 import ProjectFeed from './projectFeed/ProjectFeed'
 import VideoSection from './videoSection/VideoSection'
 import PageHeader from './pageHeader/PageHeader'
+import MediaParagraph from './mediaParagraph/MediaParagraph'
+import SimpleCards from './simpleCards/SimpleCards'
 
-export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, PageHeader};
+export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, PageHeader, MediaParagraph, SimpleCards};

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ProjectFeed.scss'
 import Icon from "../../icons/icon"
+import ComponentHeader from '../../sub-components/componentHeader/ComponentHeader'
 import ProjectCard from '../projectCard/ProjectCard'
 
 export default class ProjectFeed extends Component {
@@ -45,23 +46,15 @@ export default class ProjectFeed extends Component {
         let author = 'Dave Miller';
         return (
             <div className="colorlib-blog">
-                <div className="container" id="project-feed">
-                    <div className="row">
-                        <div className="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>Trending Projects</h2>
-                            <p>Check out the current projects people are recruiting for</p>
-                        </div>
-                    </div>
-                    {/* <div className="row"> */}
-                        {this.state.projects}
-                        <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
-                        <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
-                    {/* </div> */}
-                    {/* <div className="row"> */}
+                <div className="container">
+                    <ComponentHeader header='Trending Projects' subHeader='Check out the current projects people are recruiting for'/>
+                    {this.state.projects}
+                    {/* Below is a visual dev placeholder */}
                     <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
                     <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
                     <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
-                    {/* </div> */}
+                    <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
+                    <ProjectCard title = {title} status = {status} datePosted = {datePosted} summary = {summary} author = {author}/>
                 </div>
                 <div>
                     <p className="explore-p"><a href="#" className="btn btn-primary btn-outline with-arrow">Explore <Icon color="white" size={20} className="explore-button" icon="arrow-right2"/></a></p>
