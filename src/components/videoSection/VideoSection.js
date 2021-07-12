@@ -13,11 +13,11 @@ export default class VideoSection extends Component {
                             <p>Bread is where new ideas and projects can gain initial structure and organization</p>
                         </div>
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-md-12 animate-box">
                             <span className="play"><a href="" className="pulse popup-vimeo"><Icon color="white" size={30} className="play-button" icon="play3"/></a></span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 		    </div>
         )

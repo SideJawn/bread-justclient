@@ -8,5 +8,6 @@ import VideoSection from './videoSection/VideoSection'
 import PageHeader from './pageHeader/PageHeader'
 import MediaParagraph from './mediaParagraph/MediaParagraph'
 import SimpleCards from './simpleCards/SimpleCards'
+import SignUpModal from './signUpModal/SignUpModal'
 
-export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, PageHeader, MediaParagraph, SimpleCards};
+export {CallToAction, FlowIntroduction, Footer, NavBar, ProjectCard, ProjectFeed, VideoSection, PageHeader, MediaParagraph, SimpleCards, SignUpModal};

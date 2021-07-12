@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Dependencies necessary during setup
+
+npm install react-slidedown --save
+npm install react-icomoon
+npm install --save react-helmet
+npm install react-bootstrap bootstrap

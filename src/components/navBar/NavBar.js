@@ -2,14 +2,18 @@ import React, { Component } from 'react'
 import './NavBar.scss'
 import Burger from '../../sub-components/burger/Burger.js'
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap'
+import {SignUpModal} from '../../components'
 
 export default class NavBar extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
 			isDisplayed: "none",
-			isAnimated: ""
+			isAnimated: "",
+			isToggleOn : false
 		};
+		this.handleClick = this.handleClick.bind(this);
 	}
     handleOpen = () => {
         this.setState({isDisplayed: "block"})
@@ -19,6 +23,11 @@ export default class NavBar extends Component {
         this.setState({isDisplayed: "none"})
         this.setState({isAnimated: ""})
 	}
+	handleClick() {
+        this.setState({
+            isToggleOn: !this.state.isToggleOn
+          });
+    }
 
 	// populateCategories(data) {
 	// 	let categoriesArray = [];
@@ -48,7 +57,8 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav className="colorlib-nav" role="navigation">
-			<Burger href="javascript:void(0)"/>
+			<Burger href="javascript:void(0)" handleClick={this.handleClick}/>
+			<SignUpModal isToggleOn={this.state.isToggleOn} handleClick={this.handleClick} />
 			<div className="top-menu">
 				<div style={{backgroundColor: "#29313c", height:"50px"}}>
 					<div className="row">
@@ -72,9 +82,12 @@ export default class NavBar extends Component {
 						<div className="col-md-4 " style={{textAlign: "center", fontSize: "20px", marginTop: "6px"}} id="colorlib-logo"><Link to="/">bread</Link></div>
 						<div className="text-right menu-1" style={{marginTop: "8px", marginRight: "18px"}}>
 							<ul>
-								<li><a href="">log in</a></li>
-								<li><a href="">sign up</a></li>
 								<li><a href="">create</a></li>
+								<li><a href="">log in</a></li>
+								{/* <li><a style={{cursor:'pointer'}} onClick={this.handleClick}>sign up</a></li> */}
+								<li><Button variant="primary" onClick={this.handleClick} centered>
+								Sign Up
+								</Button></li>
 							</ul>
 						</div>
 					</div>

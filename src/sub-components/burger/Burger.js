@@ -60,6 +60,11 @@ export default class Burger extends Component {
     });
   }
 
+  handleSignUpClick = () => {
+    this.toggleBurger();
+    this.props.handleClick();
+  }
+
   render(){
     return (
       <div ref={this.setWrapperRef} className={this.state.isMenuDisplayed ? "overflow offcanvas" : ""}>
@@ -83,7 +88,7 @@ export default class Burger extends Component {
             <hr className="menu-division"/>
             <ul className="actions">
               <li><a href="">log in</a></li>
-              <li><a href="">sign up</a></li>
+              <li><a style={{cursor:'pointer'}} onClick={this.handleSignUpClick}>sign up</a></li>
               <li><a href="">create</a></li>
             </ul>
           </div>
